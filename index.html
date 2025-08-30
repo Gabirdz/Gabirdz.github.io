@@ -3,56 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>My Website</title>
+  <title>Gabriela Rodriguez</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --text: #f1f5f9;
-      --accent: #38bdf8;
+      --bg: #f9faf9;        /* light earthy white */
+      --text: #111111;      /* black text */
+      --accent: #556b2f;    /* earthy green */
+      --detail: #8b5e3c;    /* brown detail */
+      --card: #e5e5e5;      /* grey background for cards */
     }
     body {
       margin: 0;
       font: 16px/1.6 system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
-      display: flex;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
     }
-    .card {
-      max-width: 600px;
-      background: var(--card);
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,.4);
+    header {
       text-align: center;
+      padding: 3rem 1rem;
+      background: var(--accent);
+      color: white;
     }
-    h1 {
-      margin-top: 0;
-      font-size: 2rem;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--card);
+      border-left: 6px solid var(--detail);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    section h2 {
       color: var(--accent);
+      margin-top: 0;
     }
     a {
-      color: var(--accent);
+      color: var(--detail);
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 600;
     }
     a:hover {
       text-decoration: underline;
     }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
+  <header>
     <h1>Welcome to My Website</h1>
-    <p>Hi, I’m <strong>[Gabriela Rodriguez]</strong>. This is my first website built with GitHub Pages!</p>
-    <p>You can edit this text in <code>index.html</code> anytime to update the site.</p>
+    <p>Hi, I’m <strong>Gabriela Rodriguez</strong>. This is my first website built with GitHub Pages!</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
     <p>
-      <a href="https://github.com/gabirdz" target="_blank">My GitHub Profile</a>
+      I’m passionate about learning new skills and exploring technology. 
+      I enjoy working with data, creating projects that solve problems, 
+      and experimenting with new ideas.
     </p>
-  </div>
+    <p>
+      Outside of coding, I love spending time in nature, enjoying earthy colors,
+      and exploring creative hobbies that inspire me.
+    </p>
+    <p>
+      Connect with me on <a href="https://github.com/gabirdz" target="_blank">GitHub</a>.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Gabriela Rodriguez
+  </footer>
 </body>
 </html>
+
