@@ -1,0 +1,77 @@
+:root{
+  /* Palette (approx from your screenshot) */
+  --bg:#ffffff;          /* page background */
+  --text:#0b0b0b;        /* near-black text */
+  --pine:#004c3f;        /* dark pine green (nav/footer) */
+  --green:#008060;       /* primary green (buttons/links) */
+  --mint:#f1f8f5;        /* very light mint */
+  --cream:#f6f5f3;       /* warm off-white */
+  --border:#e6e8e6;      /* soft border */
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* Sticky top nav */
+nav{
+  position:sticky; top:0; z-index:1000;
+  background:var(--pine);
+  padding:0.75rem 1rem;
+  display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+nav a{
+  color:#fff; text-decoration:none; font-weight:700;
+  padding:.5rem .75rem; border-radius:.5rem;
+}
+nav a:hover{background:rgba(255,255,255,.12)}
+nav a.active{background:var(--green)}
+
+/* Header */
+.header{
+  text-align:center;
+  padding:3.25rem 1rem;
+  background:var(--cream);
+}
+.header h1{margin:0; font-size:2.3rem; color:var(--pine)}
+.header p{margin:.5rem 0 0}
+
+/* Page container */
+.container{max-width:900px; margin:2rem auto 3rem; padding:0 1rem}
+
+/* Card style blocks */
+.card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:2rem;
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+  --left: var(--green);
+  border-left:6px solid var(--left);
+}
+h2{color:var(--pine); margin-top:0}
+
+/* Links / buttons */
+a{color:var(--green)}
+a.btn{
+  display:inline-block;
+  background:var(--green);
+  color:#fff; text-decoration:none; font-weight:700;
+  padding:.7rem 1rem; border-radius:.6rem;
+}
+a.btn:hover{filter:brightness(.95)}
+
+/* Optional “mint” section background helper */
+.section-mint{background:var(--mint); padding:2rem; border-radius:12px}
+
+/* Footer */
+footer{
+  text-align:center; padding:1rem; margin-top:3rem;
+  background:var(--pine); color:#fff;
+}
