@@ -6,86 +6,128 @@
   <title>Gabriela Rodriguez</title>
   <style>
     :root {
-      --bg: #f9faf9;        /* light earthy white */
-      --text: #111111;      /* black text */
-      --accent: #556b2f;    /* earthy green */
-      --detail: #8b5e3c;    /* brown detail */
-      --card: #e5e5e5;      /* grey background for cards */
+      --bg: #ffffff;          /* white background */
+      --text: #111111;        /* black text */
+      --accent: #93a98a;      /* earthy green */
+      --detail: #8b5e3c;      /* earthy brown */
+      --grey: #f5f5f5;        /* light grey */
     }
     body {
       margin: 0;
       font: 16px/1.6 system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
+      scroll-behavior: smooth;  /* smooth scrolling */
     }
+
+    /* Navigation bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--accent);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    nav a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* Header */
     header {
       text-align: center;
-      padding: 3rem 1rem;
-      background: var(--accent);
-      color: white;
+      padding: 4rem 1rem;
+      background: var(--grey);
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      color: var(--detail);
     }
-    header p {
-      font-size: 1.1rem;
-    }
+
+    /* Sections */
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
-      background: var(--card);
-      border-left: 6px solid var(--detail);
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-bottom: 1px solid #ddd;
     }
     section h2 {
       color: var(--accent);
       margin-top: 0;
     }
-    a {
-      color: var(--detail);
-      font-weight: bold;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 1rem;
+      background: var(--accent);
+      color: white;
       margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #444;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-    <p>Hi, I’m <strong>Gabriela Rodriguez</strong>. This is my first website built with GitHub Pages!</p>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#teachings">Teachings</a>
+    <a href="#tools">Developed Tools</a>
+    <a href="#events">Scientific Events</a>
+    <a href="#publications">Publications</a>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>Gabriela Rodriguez</h1>
+    <p>Welcome to my personal website</p>
   </header>
 
-  <section>
+  <!-- Sections -->
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      I’m passionate about learning new skills and exploring technology. 
-      I enjoy working with data, creating projects that solve problems, 
-      and experimenting with new ideas.
-    </p>
-    <p>
-      Outside of coding, I love spending time in nature, enjoying earthy colors,
-      and exploring creative hobbies that inspire me.
-    </p>
-    <p>
-      Connect with me on <a href="https://github.com/gabirdz" target="_blank">GitHub</a>.
-    </p>
+    <p>Write a short introduction about yourself here.</p>
   </section>
 
+  <section id="research">
+    <h2>Research</h2>
+    <p>Describe your research interests and projects here.</p>
+  </section>
+
+  <section id="teachings">
+    <h2>Teachings</h2>
+    <p>Add details about your teaching experience or classes here.</p>
+  </section>
+
+  <section id="tools">
+    <h2>Developed Tools</h2>
+    <p>List and explain the tools you have developed here.</p>
+  </section>
+
+  <section id="events">
+    <h2>Scientific Events</h2>
+    <p>Mention the scientific events you’ve organized or participated in.</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>List your publications or link to them here.</p>
+  </section>
+
+  <!-- Footer -->
   <footer>
     © 2025 Gabriela Rodriguez
   </footer>
 </body>
 </html>
-
